@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-// @ts-expect-error Next.js handles global CSS imports at build time.
 import "./globals.css";
 
 const firs = localFont({
