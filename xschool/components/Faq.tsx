@@ -6,7 +6,6 @@ function lines(text: string) {
   return text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
 }
 
-/** `answer` is sanitized on the server before it reaches this component (see app/page.tsx). */
 export default function Faq({
   title,
   items,

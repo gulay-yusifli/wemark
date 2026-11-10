@@ -1,6 +1,5 @@
 import Logo from "./Logo";
 
-/** Visual only – no functionality required by the task. */
 export default function Footer() {
   return (
     <footer className="footer">

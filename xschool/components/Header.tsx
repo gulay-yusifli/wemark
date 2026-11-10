@@ -1,6 +1,5 @@
 import Logo from "./Logo";
 
-/** Visual only – no functionality required by the task. Sits on top of the hero image. */
 export default function Header() {
   return (
     <header className="header">

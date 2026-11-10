@@ -1,7 +1,6 @@
 import { lines } from "@/lib/html";
 import AboutSlider from "./AboutSlider";
 
-/** "xSchool" keeps its lowercase x while the rest of the heading is uppercase (CSS). */
 function Heading({ line }: { line: string }) {
   if (/^x[A-Z]/.test(line)) {
     return (

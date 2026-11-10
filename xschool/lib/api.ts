@@ -2,7 +2,7 @@ import type { XSchoolData } from "./types";
 
 const API_URL = process.env.API_URL ?? "https://admin.wemark.pro/api/tasks-xschool/";
 
-/** Server-side request. Result is cached and revalidated every hour (ISR). */
+
 export async function getXSchoolData(): Promise<XSchoolData> {
   const res = await fetch(API_URL, { next: { revalidate: 3600 } });
   if (!res.ok) {

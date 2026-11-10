@@ -13,7 +13,6 @@ export default function AboutSlider({ images }: { images: string[] }) {
     if (track && slide) track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: "smooth" });
   }, []);
 
-  // keep the active dot in sync with native scrolling / swiping / dragging
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
